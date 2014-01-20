@@ -43,11 +43,15 @@ signal C_NOT : STD_LOGIC;
 signal B_NOT : STD_LOGIC;
 signal B_NOT_AND_C : STD_LOGIC;
 signal C_NOT_AND_B : STD_LOGIC;
-signal A_OR_B_OR_C : STD_LOGIC;
-signal B_NOT_AND_C_OR_C_NOT_AND_B : STD_LOGIC;
+
 
 begin
-
-
+B_NOT <= not B;
+C_NOT <= not C;
+B_NOT_AND_C <= B_NOT and C;
+C_NOT_AND_B <= C_NOT and B;
+X <= A or B or C;
+Y <= B_NOT_AND_C or C_NOT_AND_B;
+Z <= C;
 end Behavioral;
 
