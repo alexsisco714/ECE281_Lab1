@@ -39,19 +39,22 @@ entity Lab1_Sisco is
 end Lab1_Sisco;
 
 architecture Behavioral of Lab1_Sisco is
-signal C_NOT : STD_LOGIC;
-signal B_NOT : STD_LOGIC;
-signal B_NOT_AND_C : STD_LOGIC;
-signal C_NOT_AND_B : STD_LOGIC;
+
+signal A_NOT, B_NOT, C_NOT, D,E,F,G,H : STD_LOGIC;
+
 
 
 begin
+A_NOT <= not A;
 B_NOT <= not B;
 C_NOT <= not C;
-B_NOT_AND_C <= B_NOT and C;
-C_NOT_AND_B <= C_NOT and B;
-X <= A or B or C;
-Y <= B_NOT_AND_C or C_NOT_AND_B;
-Z <= C;
+D <= A_NOT and C;
+E <= A_NOT and B;
+F <= A and B_NOT and C_NOT;
+G <= C and B_NOT;
+H <= B and C_NOT;
+X <= D or E or F;
+Y <= G or H;
+Z <=C;
 end Behavioral;
 
