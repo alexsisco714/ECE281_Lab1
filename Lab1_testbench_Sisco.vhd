@@ -119,7 +119,25 @@ BEGIN
 	B<= '0';
 	C<= '0';
       -- hold reset state for 100 ns.
-      wait for 100 ns;	
+      wait for 100 ns;
+--Sixth Line of Truth Table
+	A<= '1';
+	B<= '0';
+	C<= '1';
+      -- hold reset state for 100 ns.
+      wait for 100 ns;
+--Seventh Line of Truth Table
+	A<= '1';
+	B<= '1';
+	C<= '0';
+      -- hold reset state for 100 ns.
+      wait for 100 ns;
+--Eighth Line of Truth Table
+	A<= '1';
+	B<= '1';
+	C<= '1';
+      -- hold reset state for 100 ns.
+      wait for 100 ns;		
 
   --    wait for <clock>_period*10;
 
