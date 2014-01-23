@@ -26,6 +26,7 @@ Z=C
 
 # WaveForm Analysis
 -------------------
+![alt text](https://github.com/alexsisco714/ECE281_Lab1/blob/master/simScreenshot.JPG "Circut Simulated Waveform")
 This Waveform is correct because it produces the apropriate two's 
 complement binary number outputs based on the two's complement 
 binary input. I tested this by comparing the outputs of Isim 
