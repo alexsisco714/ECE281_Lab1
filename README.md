@@ -5,6 +5,25 @@ two's complement converter
 
 By: Alex Sisco
 
+##Truth Table
+|A       |B       |C       |X       |Y       |Z       |
+|:------:|:------:|:------:|:------:|:------:|:------:|
+|0       |0       |0       |0       |0       |0       |
+|0       |0       |1       |1       |1       |1       |
+|0       |1       |0       |1       |1       |0       |
+|0       |1       |1       |1       |0       |1       |
+|1       |0       |0       |1       |0       |0       |
+|1       |0       |1       |0       |1       |1       |
+|1       |1       |0       |0       |1       |0       |
+|1       |1       |1       |0       |0       |1       |
+
+## Minimal SOP
+X=|AC +|AB+A|B|C
+Y=B|C+C|B
+Z=C
+
+
+
 # WaveForm Analysis
 -------------------
 This Waveform is correct because it produces the apropriate two's 
