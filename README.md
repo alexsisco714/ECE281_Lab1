@@ -22,6 +22,9 @@ X=|AC +|AB+A|B|C
 Y=B|C+C|B
 Z=C
 
+## Schematic
+
+![alt text](https://github.com/alexsisco714/ECE281_Lab1/blob/master/schematic.jpg "Three Bit Schematic")
 
 
 # WaveForm Analysis
