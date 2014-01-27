@@ -22,39 +22,52 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx primitives in this code.
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
+--entity Lab1_Sisco is
+--    Port ( A : in  STD_LOGIC;
+--           B : in  STD_LOGIC;
+--           C : in  STD_LOGIC;
+--           X : out  STD_LOGIC;
+--           Y : out  STD_LOGIC;
+--           Z : out  STD_LOGIC);
+--end Lab1_Sisco;
+--
+--architecture Behavioral of Lab1_Sisco is
+--
+--signal A_NOT, B_NOT, C_NOT, D,E,F,G,H : STD_LOGIC;
+--
+--
+--
+--begin
+--A_NOT <= not A;
+--B_NOT <= not B;
+--C_NOT <= not C;
+--D <= A_NOT and C;
+--E <= A_NOT and B;
+--F <= A and B_NOT and C_NOT;
+--G <= C and B_NOT;
+--H <= B and C_NOT;
+--X <= D or E or F;
+--Y <= G or H;
+--Z <=C;
+--end Behavioral;
 entity Lab1_Sisco is
-    Port ( A : in  STD_LOGIC;
-           B : in  STD_LOGIC;
-           C : in  STD_LOGIC;
-           X : out  STD_LOGIC;
-           Y : out  STD_LOGIC;
-           Z : out  STD_LOGIC);
+	Port (A : in STD_LOGIC_VECTOR(7 downto 0);
+			Z : out STD_LOGIC_VECTOR(7 downto 0)
+			);
+			
 end Lab1_Sisco;
 
 architecture Behavioral of Lab1_Sisco is
-
-signal A_NOT, B_NOT, C_NOT, D,E,F,G,H : STD_LOGIC;
-
-
-
+signal temp : STD_LOGIC_VECTOR(7 downto 0);
 begin
-A_NOT <= not A;
-B_NOT <= not B;
-C_NOT <= not C;
-D <= A_NOT and C;
-E <= A_NOT and B;
-F <= A and B_NOT and C_NOT;
-G <= C and B_NOT;
-H <= B and C_NOT;
-X <= D or E or F;
-Y <= G or H;
-Z <=C;
+		temp<= not A;
+		Z<= std_logic_vector(unsigned(temp)+1);
 end Behavioral;
 
