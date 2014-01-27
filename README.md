@@ -22,6 +22,9 @@ X=|AC +|AB+A|B|C
 Y=B|C+C|B
 Z=C
 
+## Schematic
+
+![alt text](https://github.com/alexsisco714/ECE281_Lab1/blob/master/schematic.jpg "Three Bit Schematic")
 
 
 # WaveForm Analysis
@@ -31,3 +34,6 @@ This Waveform is correct because it produces the apropriate two's
 complement binary number outputs based on the two's complement 
 binary input. I tested this by comparing the outputs of Isim 
 to the outputs on my truth table.
+
+# VHDL Code /w 8 bit functionality
+
