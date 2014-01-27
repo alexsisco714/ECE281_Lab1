@@ -36,4 +36,4 @@ binary input. I tested this by comparing the outputs of Isim
 to the outputs on my truth table.
 
 # VHDL Code /w 8 bit functionality
-
+https://github.com/alexsisco714/ECE281_Lab1/blob/master/Lab1_Sisco.vhd
